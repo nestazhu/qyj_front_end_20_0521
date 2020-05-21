@@ -1,0 +1,207 @@
+.topbar-wrapper{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #333;
+    font-size: 12px;
+    color: #b0b0b0;
+}
+
+.topbar-wrapper a{
+    color: #b0b0b0;
+    display: block;
+}
+.topbar-wrapper a:hover{
+    color: #fff;
+}
+
+.topbar-wrapper li{
+    margin: auto 3.2px auto 3.2px;
+}
+
+.topbar-wrapper .line{
+    color: #424242;
+    margin-top: -1px;
+}
+
+.topbar li,.service{
+    float: left;
+}
+
+.app{
+    position: relative;
+}
+
+.app::after{
+    display: none;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-top: none;
+    border-bottom-color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.app:hover::after{
+    display: block;
+}
+.qrcode{
+    /* display: none; */
+    position: absolute;
+    left: -40px;
+    width: 124px;
+    height: 0;
+    overflow: hidden;
+    line-height: 1px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow:  0 0 10px rgba(0, 0, 0, .3);
+    transition: height 400ms;
+}
+
+.app:hover .qrcode{
+    height: 148px;
+}
+
+.qrcode img{
+    width: 90px;
+    height: 90px;
+    margin: 18px 17px;
+}
+
+.qrcode span{
+    font-size: 14px;
+    color: #000;
+}
+
+.app:hover span{
+    color: #000;
+}
+
+.user-info, .shop-cart{
+    float: right;
+}
+.user-info a{
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.user-info .message{
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+.shop-cart li{
+    width: 120px;
+    background-color: #424242;
+    text-align: center;
+}
+.shop-cart i{
+    margin-right: 5px;
+}
+.shop-cart:hover a{
+    background-color: #fff;
+    color: orangered;
+}
+
+.header-wrapper{
+    position: relative;
+}
+
+.header{
+    height: 100px;
+}
+
+.header .logo{
+    float: left;
+    position: relative;
+    margin-top: 22px;
+    width: 55px;
+    height: 55px;
+    overflow: hidden;
+    /* 隐藏logo中的文字 */
+    text-indent: -9999px
+}
+
+.header .logo a{
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    left: 0;
+    background-color:#ff6700;
+    background-position: center;
+    transition: left 200ms;
+}
+
+.header .logo .mi-logo{
+    background-image: url(../img/mi-logo.png);
+}
+
+.header .logo .mi-home{
+    background-image: url(../img/mi-home.png);
+    left: -55px;
+}
+
+.logo:hover .mi-logo{
+    left: 55px;
+}
+.logo:hover .mi-home{
+    left: 0px;
+}
+
+.nav-wrapper{
+    float: left;
+    /* width: 680px; */
+    height: 82px;
+    line-height: 64px;
+    margin-left: 7px;
+    padding-top: 18px;
+    /* background-color: #2ecc71; */
+}
+
+.nav .goods-info{
+    position:absolute;
+    left: 0;
+    top: 100px;
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    line-height: 284px;
+    text-align: center;
+    transition: height 0.6s;
+    z-index: 9999;
+}
+
+.nav .show-goods:hover ~ .goods-info,
+.goods-info:hover {
+    /* color: #ff6700; */
+    height: 284px;
+    border-top: 1px solid rgb(224, 224, 224);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
+}
+.nav li{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+
+.nav .all-goods-wrapper{
+    margin-left: 52px;
+}
+
+.nav a{
+    display: block;
+    color: #424242;
+    font-size: 16px;
+}
+
+.nav a:hover{
+    color: #ff6700;
+}
+
+
